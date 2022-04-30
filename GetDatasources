@@ -1,0 +1,6 @@
+query datasources {
+	datasources{
+    name
+    id
+  }
+}
