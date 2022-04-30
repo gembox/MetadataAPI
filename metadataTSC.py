@@ -2,6 +2,7 @@ import csv
 import os
 import json
 import tableauserverclient as TSC
+import extract_json_values
 
 with open('C:\\creds\\pat.txt', 'r') as file :
     token = file.read()
@@ -41,3 +42,4 @@ with server.auth.sign_in(tableau_auth):
         with open('query_result.json',"w") as jsonfile:
             json.dump(result['data'], jsonfile, indent =4)
 
+        extract_json_values.get_json_values('query_result.json','luid')
