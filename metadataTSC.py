@@ -1,5 +1,3 @@
-import csv
-import os
 import json
 import tableauserverclient as TSC
 import extract_json_values

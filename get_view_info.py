@@ -1,5 +1,4 @@
 import csv
-import os
 import tableauserverclient as TSC
 import get_view_usage
 
